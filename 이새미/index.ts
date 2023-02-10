@@ -1,4 +1,3 @@
-// 설계
 interface iTodo {
   id: number;
   content: string;
@@ -46,6 +45,8 @@ class TTodos {
 
   delete(id: number) {
     const findTodoIndex = this.ids.findIndex(ele => ele.id === id)
+    if (findTodoIndex === -1) return
+
     this.ids.splice(findTodoIndex, 1)
   }
 
