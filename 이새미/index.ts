@@ -7,28 +7,6 @@ interface iTodo {
   tags?: string[];
 }
 
-// class TTodos {
-//   private ids: iTodo[];
-//   create(
-//     content: string,
-//     isCompleted: boolean,
-//     category: string,
-//     tags?: string[]
-//   ): number {
-//     return 0;
-//   }
-
-//   read(id: number): iTodo | iTodo[] {
-//     return [];
-//   }
-
-//   delete(id: number) {}
-
-//   deleteTag(id: number, deleteTag: string[]) {}
-// }
-
-// 구현
-// 태그는 필수
 class Todo implements iTodo {
   id: number;
   content: string;
